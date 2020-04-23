@@ -1,0 +1,8 @@
+<app-divider>Modal</app-divider>
+<button (click)="onClick()">show Modal</button>
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+  <div modalTitle>Header</div>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque iure similique ab aperiam voluptas voluptate expedita necessitatibus, quam blanditiis nisi alias quaerat incidunt soluta minus veritatis porro quidem nesciunt facilis.</p>
+</app-modal>
+<app-divider>Accordian</app-divider>
+<app-accordion [items]="items"></app-accordion>
